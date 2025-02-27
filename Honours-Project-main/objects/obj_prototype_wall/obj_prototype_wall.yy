@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_prototype_wall",
-    "path":"sprites/spr_prototype_wall/spr_prototype_wall.yy",
+    "name":"spr_walls_and_background_tile_sheet",
+    "path":"sprites/spr_walls_and_background_tile_sheet/spr_walls_and_background_tile_sheet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
