@@ -1,15 +1,15 @@
 // Sets position of the cube detector
-x = obj_prototype_character.x;
-y = obj_prototype_character.y;
+x = obj_character.x;
+y = obj_character.y;
 
 // Controls the location of the cube detector
 if global.is_facing_right == true
 {
-	x = obj_prototype_character.x + 18;
+	x = obj_character.x + 25;
 }
 else if global.is_facing_right = false
 {
-	x = obj_prototype_character.x - 18;
+	x = obj_character.x - 25;
 }
 
 		// Picking up blue cube logic
@@ -25,6 +25,7 @@ function picking_up_blue_cube()
 {
 	if mouse_check_button_pressed(mb_left) and global.has_blue_cube != true and global.has_green_cube != true and global.has_orange_cube != true
 	{
+		obj_character.sprite_index = spr_eating;
 		global.has_blue_cube = true;	
 		obj_blue_cube. x = 0;
 		obj_blue_cube. y = 0;
@@ -47,6 +48,7 @@ function picking_up_orange_cube()
 {
 	if mouse_check_button_pressed(mb_left) and global.has_orange_cube != true and global.has_blue_cube != true and global.has_green_cube != true
 	{
+		obj_character.sprite_index = spr_eating;
 		global.has_orange_cube = true;	
 		obj_orange_cube. x = 0;
 		obj_orange_cube. y = 0;
@@ -69,6 +71,7 @@ function picking_up_green_cube()
 {
 	if mouse_check_button_pressed(mb_left) and global.has_orange_cube != true and global.has_blue_cube != true and global.has_green_cube != true
 	{
+		obj_character.sprite_index = spr_eating;
 		global.has_green_cube = true;	
 		obj_green_cube. x = 0;
 		obj_green_cube. y = 0;

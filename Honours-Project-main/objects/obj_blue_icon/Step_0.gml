@@ -1,6 +1,6 @@
 // Position of icon
-x = obj_prototype_character.x
-y = obj_prototype_character.y - 25
+x = obj_character.x
+y = obj_character.y - 25
 
 // If the player has the cube, the icon becomes visible, if not. Then it is invisible
 if global.has_blue_cube == true
