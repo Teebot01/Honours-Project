@@ -17,7 +17,7 @@ if (keyboard_check(ord("D")))
 	global.is_facing_right = true;
 }
 
-if place_meeting(x, y+1, global.surfaces)
+if place_meeting(x, y+1, global.collisions_tilemap)
 {
 	// Gravity is 0 if player is standing on an an object
 	ysp = 0;
