@@ -41,11 +41,11 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":11,"SerialiseWidth":20,"TileCompressedData":[
           1,62,-18,48,2,63,34,-17,-2147483648,3,0,32,34,-10,-2147483648,1,0,-6,-2147483648,3,0,32,34,-3,-2147483648,
-          1,5,-10,-2147483648,6,5,-2147483648,-2147483648,0,32,34,-3,-2147483648,1,50,-3,3,-7,-2147483648,6,2,
+          1,5,-10,-2147483648,6,5,-2147483648,-2147483648,0,32,34,-3,-2147483648,1,50,-4,3,-6,-2147483648,6,2,
           -2147483648,-2147483648,0,32,34,-3,-2147483648,3,2,0,0,-8,-2147483648,6,2,-2147483648,-2147483648,0,
-          32,34,-3,-2147483648,7,2,0,-2147483648,-2147483648,16,3,6,-4,-2147483648,6,2,-2147483648,-2147483648,
-          0,32,34,-3,-2147483648,4,4,0,-2147483648,-2147483648,-4,0,-3,-2147483648,6,4,-2147483648,-2147483648,
-          0,32,34,-4,-2147483648,1,0,-12,-2147483648,3,0,32,34,-18,0,5,32,34,0,0,17,-15,18,1,78,
+          32,34,-3,-2147483648,4,2,0,-2147483648,-2147483648,-3,0,-4,-2147483648,6,2,-2147483648,-2147483648,0,
+          32,34,-3,-2147483648,17,4,0,-2147483648,-2147483648,0,16,3,6,0,-2147483648,-2147483648,4,-2147483648,
+          -2147483648,0,32,34,-4,-2147483648,1,0,-12,-2147483648,3,0,32,34,-18,0,5,32,34,0,0,17,-15,18,1,78,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_walls","path":"tilesets/ts_walls/ts_walls.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_8B345BD","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_8B345BD","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_back_panels","path":"sprites/spr_back_panels/spr_back_panels.yy",},"x":32.0,"y":288.0,},
