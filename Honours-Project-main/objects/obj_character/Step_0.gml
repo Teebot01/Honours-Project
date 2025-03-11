@@ -32,7 +32,7 @@ if place_meeting(x, y+1, global.collisions_tilemap)
 	// If the player presses the space key, the character jumps
 	if keyboard_check_pressed(vk_space) and global.can_jump == true
 	{
-		ysp =- 6;
+		ysp =- 4.5;
 	}
 }
 
