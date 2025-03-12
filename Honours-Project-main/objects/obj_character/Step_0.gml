@@ -54,3 +54,9 @@ if !place_meeting(x, y+1, global.collisions) and global.can_jump == true
 {
 	sprite_index = spr_jumping_normal;
 }
+
+if place_meeting(x, y, obj_acid)
+{
+	room_goto(Room2);
+	audio_stop_all()
+}
