@@ -24,7 +24,7 @@ else
 	sprite_index = spr_idle_normal
 }
 
-if place_meeting(x, y+1, global.collisions_tilemap)
+if place_meeting(x, y+1, global.collisions)
 {
 	// Gravity is 0 if player is standing on an an object
 	ysp = 0;
@@ -37,7 +37,7 @@ if place_meeting(x, y+1, global.collisions_tilemap)
 }
 
 // Controls what the player can collide with
-move_and_collide(xsp, ysp, global.collisions_tilemap)
+move_and_collide(xsp, ysp, global.collisions)
 
 // Controls which direction the character sprite is facing based on player input
 if global.is_facing_right == true
@@ -50,7 +50,7 @@ else if global.is_facing_right = false
 }
 
 // Triggers jumping animation for when the player isn't holding a cube
-if !place_meeting(x, y+1, global.collisions_tilemap) and global.can_jump == true
+if !place_meeting(x, y+1, global.collisions) and global.can_jump == true
 {
 	sprite_index = spr_jumping_normal;
 }

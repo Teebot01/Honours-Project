@@ -84,7 +84,7 @@ function picking_up_green_cube()
 		
 // If the right mouse button is pressed and the has_blue_cube variable = true, the blue cube's position = the position of the cube detector,
 // has_blue_cube = false and the player can jump again
-if mouse_check_button_pressed(mb_right) and global.has_blue_cube == true and !place_meeting(x, y, global.surfaces)
+if mouse_check_button_pressed(mb_right) and global.has_blue_cube == true and !place_meeting(x, y, global.collisions)
 {	
 	obj_blue_cube. x = x;
 	obj_blue_cube. y = y;
@@ -97,7 +97,7 @@ if mouse_check_button_pressed(mb_right) and global.has_blue_cube == true and !pl
 		
 // If the right mouse button is pressed and the has_orange_cube variable = true, the orange cube's position = the position of the cube detector,
 // has_orange_cube = false and the player can jump again
-if mouse_check_button_pressed(mb_right) and global.has_orange_cube == true and !place_meeting(x, y, global.surfaces)
+if mouse_check_button_pressed(mb_right) and global.has_orange_cube == true and !place_meeting(x, y, global.collisions)
 {	
 	obj_orange_cube. x = x;
 	obj_orange_cube. y = y;
@@ -110,7 +110,7 @@ if mouse_check_button_pressed(mb_right) and global.has_orange_cube == true and !
 		
 // If the right mouse button is pressed and the has_green_cube variable = true, the green cube's position = the position of the cube detector,
 // has_green_cube = false and the player can jump again
-if mouse_check_button_pressed(mb_right) and global.has_green_cube == true and !place_meeting(x, y, global.surfaces)
+if mouse_check_button_pressed(mb_right) and global.has_green_cube == true and !place_meeting(x, y, global.collisions)
 {	
 	obj_green_cube. x = x;
 	obj_green_cube. y = y;

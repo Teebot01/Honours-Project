@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_right_vertical_platform_up",
+  "closed":false,
+  "kind":0,
+  "name":"pth_right_vertical_platform_up",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":127.99994,"y":50.0,},
+    {"speed":100.0,"x":127.9999,"y":0.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

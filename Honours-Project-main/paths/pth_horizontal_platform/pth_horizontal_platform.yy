@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_horizontal_platform",
+  "closed":false,
+  "kind":0,
+  "name":"pth_horizontal_platform",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-4.0931244,"y":0.8977356,},
+    {"speed":100.0,"x":119.0,"y":0.8977356,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
