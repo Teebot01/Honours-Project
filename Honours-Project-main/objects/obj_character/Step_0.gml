@@ -60,3 +60,9 @@ if place_meeting(x, y, obj_acid)
 	room_goto(Room2);
 	audio_stop_all()
 }
+
+if place_meeting(x, y, obj_door) and global.door_is_open and keyboard_check_pressed(vk_up)
+{
+	room_goto(Room3);
+	audio_stop_all()
+}
