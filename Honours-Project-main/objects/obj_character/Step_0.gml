@@ -24,6 +24,26 @@ else
 	sprite_index = spr_idle_normal
 }
 
+// Walking With Cube
+if (keyboard_check(ord("A")))
+{
+    xsp =- 1;
+	global.is_facing_right = false;
+	sprite_index = spr_running_normal;
+}
+
+else if (keyboard_check(ord("D")))
+{
+    xsp =+ 1;
+	global.is_facing_right = true;
+	sprite_index = spr_running_normal;
+}
+
+else
+{
+	sprite_index = spr_idle_normal;
+}
+
 if place_meeting(x, y+1, global.collisions)
 {
 	// Gravity is 0 if player is standing on an an object
