@@ -34,6 +34,9 @@
     "name":"spr_idle_normal",
     "path":"sprites/spr_idle_normal/spr_idle_normal.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_idle_normal",
+    "path":"sprites/spr_idle_normal/spr_idle_normal.yy",
+  },
   "visible":true,
 }
