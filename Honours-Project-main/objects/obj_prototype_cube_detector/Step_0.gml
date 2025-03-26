@@ -31,6 +31,7 @@ function picking_up_blue_cube()
 		obj_blue_cube. y = 0;
 		global.can_jump = false;
 		obj_blue_cube.image_alpha = 0
+		global.cube_is_stored = true
 	}
 }
 
@@ -54,6 +55,7 @@ function picking_up_orange_cube()
 		obj_orange_cube. y = 0;
 		global.can_jump = false;
 		obj_orange_cube.image_alpha = 0
+		global.cube_is_stored = true
 	}
 }
 
@@ -77,6 +79,7 @@ function picking_up_green_cube()
 		obj_green_cube. y = 0;
 		global.can_jump = false;
 		obj_green_cube.image_alpha = 0
+		global.cube_is_stored = true
 	}
 }
 
@@ -91,6 +94,7 @@ if mouse_check_button_pressed(mb_right) and global.has_blue_cube == true and !pl
 	global.has_blue_cube = false;
 	global.can_jump = true;
 	obj_blue_cube.image_alpha = 1
+	global.cube_is_stored = false
 }
 
 		// placing down orange cube logic
@@ -104,6 +108,7 @@ if mouse_check_button_pressed(mb_right) and global.has_orange_cube == true and !
 	global.has_orange_cube = false;
 	global.can_jump = true;
 	obj_orange_cube.image_alpha = 1
+	global.cube_is_stored = false
 }
 
 		// placing down green cube logic
@@ -117,4 +122,5 @@ if mouse_check_button_pressed(mb_right) and global.has_green_cube == true and !p
 	global.has_green_cube = false;
 	global.can_jump = true;
 	obj_green_cube.image_alpha = 1
+	global.cube_is_stored = false
 }
