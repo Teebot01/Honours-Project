@@ -35,9 +35,9 @@ move_and_collide(xsp, ysp, global.surfaces)
 // Controls which direction the character sprite is facing based on player input
 if global.is_facing_right == true
 {
-	image_xscale = +1
+	image_xscale = +1;
 }
 else if global.is_facing_right = false
 {
-	image_xscale = -1
+	image_xscale = -1;
 }

@@ -14,7 +14,7 @@ else if global.is_facing_right = false
 
 		// Picking up blue cube logic
 // If cube detector is touching the blue cube, run the picking_up_blue_cube function
-if (place_meeting(x, y, obj_blue_cube))
+if (place_meeting(x, y, obj_blue_cube)) and mouse_check_button_pressed(mb_left) and global.has_blue_cube != true and global.has_green_cube != true and global.has_orange_cube != true and global.cube_is_stored != true
 {
 	picking_up_blue_cube();
 }
@@ -23,16 +23,13 @@ if (place_meeting(x, y, obj_blue_cube))
 // If the statement runs, has_blue_cube = true, the position of the blue cube is set to 0, and the player can no longer jump
 function picking_up_blue_cube()
 {
-	if mouse_check_button_pressed(mb_left) and global.has_blue_cube != true and global.has_green_cube != true and global.has_orange_cube != true
-	{
-		obj_character.sprite_index = spr_eating;
-		global.has_blue_cube = true;	
-		obj_blue_cube. x = 0;
-		obj_blue_cube. y = 0;
-		global.can_jump = false;
-		obj_blue_cube.image_alpha = 0
-		global.cube_is_stored = true
-	}
+	obj_character.sprite_index = spr_eating;
+	global.has_blue_cube = true;	
+	obj_blue_cube. x = 0;
+	obj_blue_cube. y = 0;
+	global.can_jump = false;
+	obj_blue_cube.image_alpha = 0;
+	global.cube_is_stored = true;
 }
 
 		// Picking up orange cube logic
@@ -54,8 +51,8 @@ function picking_up_orange_cube()
 		obj_orange_cube. x = 0;
 		obj_orange_cube. y = 0;
 		global.can_jump = false;
-		obj_orange_cube.image_alpha = 0
-		global.cube_is_stored = true
+		obj_orange_cube.image_alpha = 0;
+		global.cube_is_stored = true;
 	}
 }
 
@@ -78,8 +75,8 @@ function picking_up_green_cube()
 		obj_green_cube. x = 0;
 		obj_green_cube. y = 0;
 		global.can_jump = false;
-		obj_green_cube.image_alpha = 0
-		global.cube_is_stored = true
+		obj_green_cube.image_alpha = 0;
+		global.cube_is_stored = true;
 	}
 }
 
@@ -93,8 +90,8 @@ if mouse_check_button_pressed(mb_right) and global.has_blue_cube == true and !pl
 	obj_blue_cube. y = y;
 	global.has_blue_cube = false;
 	global.can_jump = true;
-	obj_blue_cube.image_alpha = 1
-	global.cube_is_stored = false
+	obj_blue_cube.image_alpha = 1;
+	global.cube_is_stored = false;
 }
 
 		// placing down orange cube logic
@@ -107,8 +104,8 @@ if mouse_check_button_pressed(mb_right) and global.has_orange_cube == true and !
 	obj_orange_cube. y = y;
 	global.has_orange_cube = false;
 	global.can_jump = true;
-	obj_orange_cube.image_alpha = 1
-	global.cube_is_stored = false
+	obj_orange_cube.image_alpha = 1;
+	global.cube_is_stored = false;
 }
 
 		// placing down green cube logic
@@ -121,6 +118,6 @@ if mouse_check_button_pressed(mb_right) and global.has_green_cube == true and !p
 	obj_green_cube. y = y;
 	global.has_green_cube = false;
 	global.can_jump = true;
-	obj_green_cube.image_alpha = 1
-	global.cube_is_stored = false
+	obj_green_cube.image_alpha = 1;
+	global.cube_is_stored = false;
 }

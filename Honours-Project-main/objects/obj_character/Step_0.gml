@@ -1,4 +1,4 @@
-#region Plyer Movement Input
+#region Player Keyboard Input
 						// Movement
 // Gravity
 ysp += 0.1;
@@ -22,7 +22,12 @@ else if (keyboard_check(ord("D")))
 
 else
 {
-	sprite_index = spr_idle_normal
+	sprite_index = spr_idle_normal;
+}
+
+if(keyboard_check(ord("R")))
+{
+	room_restart();
 }
 
 if global.cube_is_stored == true
@@ -42,7 +47,7 @@ if global.cube_is_stored == true
 	}
 	else
 	{
-		sprite_index = spr_idle_holding
+		sprite_index = spr_idle_holding;
 	}
 	
 	if !place_meeting(x, y+1, global.collisions) and global.can_jump == false
@@ -52,16 +57,16 @@ if global.cube_is_stored == true
 }
 
 // Controls what the player can collide with
-move_and_collide(xsp, ysp, global.collisions)
+move_and_collide(xsp, ysp, global.collisions);
 
 // Controls which direction the character sprite is facing based on player input
 if global.is_facing_right == true
 {
-	image_xscale = +1
+	image_xscale = +1;
 }
 else if global.is_facing_right = false
 {
-	image_xscale = -1
+	image_xscale = -1;
 }
 
 #endregion
@@ -90,13 +95,13 @@ if !place_meeting(x, y+1, global.collisions) and global.can_jump == true
 if place_meeting(x, y, obj_acid)
 {
 	room_goto(Room2);
-	audio_stop_all()
+	audio_stop_all();
 }
 
 if place_meeting(x, y, obj_door) and global.door_is_open and keyboard_check_pressed(vk_up)
 {
 	room_goto(Room3);
-	audio_stop_all()
+	audio_stop_all();
 }
 
 #endregion

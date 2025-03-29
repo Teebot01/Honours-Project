@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Platforms",
-    "path":"folders/Objects/Final Objects/Platforms.yy",
+    "path":"folders/Objects/Platforms.yy",
   },
   "parentObjectId":null,
   "persistent":false,
