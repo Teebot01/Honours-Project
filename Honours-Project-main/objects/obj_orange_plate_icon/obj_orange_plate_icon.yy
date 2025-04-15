@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_green_icon",
+  "%Name":"obj_orange_plate_icon",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_green_icon",
+  "name":"obj_orange_plate_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cube Icons",
-    "path":"folders/Objects/Final Objects/Cube Icons.yy",
+    "name":"Pressure Plate Icons",
+    "path":"folders/Objects/Final Objects/Pressure Plate Icons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_green_icon",
-    "path":"sprites/spr_green_icon/spr_green_icon.yy",
+    "name":"spr_orange_icon",
+    "path":"sprites/spr_orange_icon/spr_orange_icon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

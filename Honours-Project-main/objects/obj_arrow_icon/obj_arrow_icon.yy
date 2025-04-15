@@ -9,8 +9,8 @@
   "name":"obj_arrow_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Icons",
-    "path":"folders/Objects/Final Objects/Icons.yy",
+    "name":"Final Objects",
+    "path":"folders/Objects/Final Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

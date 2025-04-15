@@ -9,8 +9,8 @@
   "name":"obj_blue_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Icons",
-    "path":"folders/Objects/Final Objects/Icons.yy",
+    "name":"Cube Icons",
+    "path":"folders/Objects/Final Objects/Cube Icons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
