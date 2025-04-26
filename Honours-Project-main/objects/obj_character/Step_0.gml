@@ -8,11 +8,14 @@ xsp = 0;
 // Walking
 if (keyboard_check(ord("A")))
 {
-    xsp =- 1;
+    xsp -= 1;
 	global.is_facing_right = false;
+	
+	// Sprite is changed to running animation
 	sprite_index = spr_running_normal;
 }
 
+// Same, but for moving right
 else if (keyboard_check(ord("D")))
 {
     xsp =+ 1;
@@ -22,14 +25,17 @@ else if (keyboard_check(ord("D")))
 
 else
 {
+	// Animation = idle
 	sprite_index = spr_idle_normal;
 }
 
 if(keyboard_check(ord("R")))
 {
+	// Game is restarted
 	room_restart();
 }
 
+// Movement code, but if they are holding a cube
 if global.cube_is_stored == true
 {
 		// Walking
@@ -50,6 +56,7 @@ if global.cube_is_stored == true
 		sprite_index = spr_idle_holding;
 	}
 	
+	// If player isn't on any surface, and if they are holding on to a cube, switch sprite to falling_holding sprite
 	if !place_meeting(x, y+1, global.collisions) and global.can_jump == false
 	{
 		sprite_index = spr_falling_holding;
@@ -92,15 +99,17 @@ if !place_meeting(x, y+1, global.collisions) and global.can_jump == true
 	sprite_index = spr_jumping_normal;
 }
 
+// If the player touches acid, take them to game over screen
 if place_meeting(x, y, obj_acid)
 {
-	room_goto(Room2);
+	room_goto(rm_gameover);
 	audio_stop_all();
 }
 
+// If the player is at the door, the door is open, and they press the up arrow key. Take them to the win screen
 if place_meeting(x, y, obj_door) and global.door_is_open and keyboard_check_pressed(vk_up)
 {
-	room_goto(Room3);
+	room_goto(rm_win);
 	audio_stop_all();
 }
 

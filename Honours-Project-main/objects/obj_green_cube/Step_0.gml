@@ -9,6 +9,6 @@ if (place_meeting(x, y, obj_green_pressure_plate_detector))
 
 if place_meeting(x, y, obj_acid)
 {
-	room_goto(Room2);
+	room_goto(rm_gameover);
 	audio_stop_all();
 }
