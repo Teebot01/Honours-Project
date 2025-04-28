@@ -7,6 +7,7 @@ if (place_meeting(x, y, obj_orange_pressure_plate_detector))
 	show_debug_message("Cube placed on pressure plate");
 }
 
+// If cube touches acid, the music stops and player is taken to game over screen
 if place_meeting(x, y, obj_acid)
 {
 	room_goto(rm_gameover);

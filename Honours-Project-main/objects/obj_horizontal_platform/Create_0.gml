@@ -1,1 +1,0 @@
-path_start(pth_horizontal_platform, .5, path_action_reverse, 0);

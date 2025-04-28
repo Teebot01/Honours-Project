@@ -1,3 +1,5 @@
+// If all pressure plates are activated, the door animation plays based on being on a timer.
+// When the door is open, door_is_open = true
 if global.blue_pressure_plate_activated == true and global.green_pressure_plate_activated == true and global.orange_pressure_plate_activated == true
 {
 	door_timer--;
@@ -9,6 +11,7 @@ if global.blue_pressure_plate_activated == true and global.green_pressure_plate_
 	}
 }
 
+// If all pressure plates aren't activated, door_is_closed = false
 else
 {
 	sprite_index = spr_door_closed;
